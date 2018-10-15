@@ -22,8 +22,7 @@ If the demo has worked,next step.
 
 ```
 cd /home/pi/
-git clone 
-https://github.com/senyoltw/dialogflow-for-aiy-voicekit
+git clone https://github.com/senyoltw/dialogflow-for-aiy-voicekit
 
 # copy Dialogflow module and sample program.
 cp -ipr dialogflow-for-aiy-voicekit/mod AIY-projects-python/src/
