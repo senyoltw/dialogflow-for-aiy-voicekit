@@ -56,12 +56,11 @@ class _Detect_Intent_Texts(object):
         response = session_client.detect_intent(
             session=session, query_input=query_input)
 
-        logger.debug('=' * 20)
-        logger.debug('Query text: {}'.format(response.query_result.query_text))
-        logger.debug('Detected intent: {} (confidence: {})\n'.format(
+        logger.info('Query text: {}'.format(response.query_result.query_text))
+        logger.info('Detected intent: {} (confidence: {})\n'.format(
             response.query_result.intent.display_name,
             response.query_result.intent_detection_confidence))
-        logger.debug('Fulfillment text: {}\n'.format(
+        logger.info('Fulfillment text: {}\n'.format(
             response.query_result.fulfillment_text))
         return response
     # [END dialogflow_detect_intent_text]
