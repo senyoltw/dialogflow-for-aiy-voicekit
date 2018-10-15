@@ -1,6 +1,7 @@
 # dialogflow-for-aiy-voicekit
 Dialogflow API for AIY Voice Kit.    
 Add your AIY Voice Kit Dialogflow API.
+You can make your app work directly without google home.
 
 # Before How to install
 Buy The AIY Voice Kit and complete the tutorial.  
@@ -38,3 +39,6 @@ src/examples/voice/cloudspeech_dialogflow_text.py
 ```
 Press the button and speak your Dialogflow APP!
 
+# Speak your app
+use `cloudspeech_dialogflow_text_with_texttospeech.py`
+It is Adding beta release of the Dialogflow audio response.
