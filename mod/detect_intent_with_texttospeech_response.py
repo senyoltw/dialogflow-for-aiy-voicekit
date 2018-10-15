@@ -14,17 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""DialogFlow API Detect Intent Python sample with text inputs.
-Examples:
-  python detect_intent_texts.py -h
-  python detect_intent_texts.py --project-id PROJECT_ID \
-  --session-id SESSION_ID \
-  "hello" "book a meeting room" "Mountain View"
-  python detect_intent_texts.py --project-id PROJECT_ID \
-  --session-id SESSION_ID \
-  "tomorrow" "10 AM" "2 hours" "10 people" "A" "yes"
-"""
-
 # [START import_libraries]
 import argparse
 import uuid
@@ -34,7 +23,7 @@ import json
 import logging
 import aiy.i18n
 
-import dialogflow_v2 as dialogflow
+import dialogflow_v2beta1 as dialogflow
 # [END import_libraries]
 
 logger = logging.getLogger("dialogflow")
