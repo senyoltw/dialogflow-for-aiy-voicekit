@@ -27,7 +27,8 @@ import os
 import sys
 import uuid
 
-aiy.i18n.set_language_code('ja-JP')
+# Set your language_code
+#aiy.i18n.set_language_code('ja-JP')
 
 def main():
     recognizer = aiy.cloudspeech.get_recognizer()
