@@ -46,7 +46,7 @@ class _Detect_Intent_Texts(object):
         session_client = dialogflow.SessionsClient()
 
         session = session_client.session_path(self.project_id, session_id)
-        logger.debug('Session path: {}\n'.format(session))
+        logger.debug('Session path: {}'.format(session))
 
         text_input = dialogflow.types.TextInput(
             text=texts, language_code=self.language_code)
@@ -63,10 +63,10 @@ class _Detect_Intent_Texts(object):
             output_audio_config=output_audio_config)
 
         logger.info('Query text: {}'.format(response.query_result.query_text))
-        logger.info('Detected intent: {} (confidence: {})\n'.format(
+        logger.info('Detected intent: {} (confidence: {})'.format(
             response.query_result.intent.display_name,
             response.query_result.intent_detection_confidence))
-        logger.info('Fulfillment text: {}\n'.format(
+        logger.info('Fulfillment text: {}'.format(
             response.query_result.fulfillment_text))
         return response
     # [END dialogflow_detect_intent_text]
